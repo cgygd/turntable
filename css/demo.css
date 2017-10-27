@@ -1,0 +1,41 @@
+.turnplate{
+  position: relative;
+  display: table;
+  margin: 0 auto;
+}
+.turnplate-content{
+  width: 300px;
+  height: 300px;
+}
+.turnplate-pointer{
+  width: 50px;
+  position: absolute;
+  left: 50%;
+  top:50%;
+  margin-left: -25px;
+  margin-top: -33px;
+}
+.lottery-sector-pointer-start{
+  -moz-animation: pointer 1s infinite linear;
+  -webkit-animation: pointer 1s infinite linear;
+  -o-animation: pointer 1s infinite linear;
+  -ms-animation: pointer 1s infinite linear;
+  animation: pointer 1s infinite linear;
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  -o-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+.lottery-sector-pointer-stop{
+  -moz-animation: pointer_stop 2s forwards 1 ease-out;
+  -webkit-animation: pointer_stop 2s forwards 1 ease-out;
+  -o-animation: pointer_stop 2s forwards 1 ease-out;
+  -ms-animation: pointer_stop 2s forwards 1 ease-out;
+  animation: pointer_stop 2s forwards 1 ease-out;
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  -o-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}

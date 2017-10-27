@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/demo.css">
+  <link rel="stylesheet" href="css/keyframes.css">
+</head>
+<body>
+  <div class="turnplate">
+    <img id="turnplate-content" class="turnplate-content" src="images/img1.png" alt="">
+    <img id="turnplate-btn" class="turnplate-pointer" src="images/pointer.png" alt="">
+  </div>
+
+  <script src="js/preTransform.js"></script>
+  <script src="js/turntable.js"></script>
+  <script>
+    var turntableList = [
+      {
+        id:1,
+        name: '粉红色'
+      },
+      {
+        id:2,
+        name: '紫色'
+      },
+      {
+        id:3,
+        name: '红色'
+      },
+      {
+        id:4,
+        name: '黄色'
+      },
+      {
+        id:5,
+        name: '蓝色'
+      },
+      {
+        id:6,
+        name: '灰色'
+      },
+      {
+        id:7,
+        name: '绿色'
+      },
+      {
+        id:8,
+        name: '橘红色'
+      }
+    ];
+
+    /**
+     * 抽奖转盘配置
+     */
+    var turntable = new V_turntable({
+      element: 'turnplate-content',
+      point: 'turnplate-btn',
+      prize: turntableList
+    }).on('confirm', function (data) {
+      console.log('tab click do something');
+      console.log(data)
+      alert(data.data.name)
+    });
+
+  </script>
+</body>
+</html>
